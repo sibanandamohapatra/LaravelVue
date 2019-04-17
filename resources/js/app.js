@@ -9,6 +9,21 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+// Vue Code
+import VueRouter from 'vue-router'
+Vue.use(VueRouter);
+
+const Foo = { template: '<div>foo</div>' }
+  const Bar = { template: '<div>bar</div>' }
+
+  const routes = [
+    { path: '/dashboard', component: require('./components/Dashboard.vue').default },
+    { path: '/profile', component: require('./components/Profile.vue').default }
+  ];
+  const router = new VueRouter({
+    routes // short for `routes: routes`
+  });
+  
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -29,5 +44,5 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  */
 
 const app = new Vue({
-    el: '#app'
-});
+    router
+  }).$mount('#app')

@@ -11,14 +11,14 @@
 @import '~admin-lte/dist/css/adminlte.css';
 
 // FontAwesome
-$fa-font-path: "../../node_modules/font-awesome/fonts" !default;
-@import "~font-awesome/scss/font-awesome";
-/*
+//$fa-font-path: "../../node_modules/font-awesome/fonts" !default;
+//@import "~font-awesome/scss/font-awesome";
+
 $fa-font-path: "../webfonts";
 @import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '~@fortawesome/fontawesome-free/scss/solid.scss';
 @import '~@fortawesome/fontawesome-free/scss/brands.scss';
-*/
+
 
 .navbar-laravel {
   background-color: #fff;
